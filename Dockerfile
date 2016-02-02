@@ -8,4 +8,8 @@ RUN setup-gollum
 
 ADD run-gollum.sh /usr/bin/run-gollum
 
+VOLUME /root/wiki
+
+EXPOSE 80
+
 CMD run-gollum && sleep infinity
