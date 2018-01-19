@@ -6,8 +6,6 @@ MAINTAINER Grey Christoforo <grey@christoforo.net>
 ADD setup-gollum.sh /usr/sbin/setup-gollum
 RUN setup-gollum
 
-ENV GOLLUM_OPTS=""
-
 ADD start-gollum.sh /usr/bin/start-gollum
 
 VOLUME /root/wiki
