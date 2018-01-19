@@ -6,6 +6,7 @@ docker run \
   --detach=true \
   --restart='always' \
   --name gollum \
+  --env GOLLUM_OPTS='--bare --allow-uploads dir' \
   --publish 4567:4567 \
   --mount type=bind,source="~/wiki",target=/root/wiki \
   greyltc/gollum
