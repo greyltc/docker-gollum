@@ -10,7 +10,6 @@ ADD start-gollum.sh /usr/bin/start-gollum
 
 VOLUME /root/wiki
 
-EXPOSE 80
-EXPOSE 443
+EXPOSE 4567
 
 CMD start-gollum && sleep infinity
