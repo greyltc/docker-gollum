@@ -6,7 +6,7 @@ pacman -S --needed --noconfirm base-devel ruby git
 #chmod +x /etc/profile.d/ruby.sh
 #source /etc/profile.d/ruby.sh
 
-gem --no-user-install install gollum
+gem install gollum --no-user-install
 
 #mkdir /root/wiki
 #cd /root/wiki
