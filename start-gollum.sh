@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-gollum ${GOLLUM_OPTS} /root/wiki&
+$(ruby -e 'print Gem.user_dir')/bin/gollum ${GOLLUM_OPTS} /root/wiki&
