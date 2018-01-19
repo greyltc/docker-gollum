@@ -9,4 +9,6 @@ docker run \
   --env GOLLUM_OPTS='--bare --allow-uploads dir' \
   --publish 4567:4567 \
   --mount type=bind,source="$HOME/wiki",target=/root/wiki \
+  --tty=false \
+  --interactive=false \
   greyltc/gollum
