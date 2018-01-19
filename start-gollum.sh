@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-gollum --allow-uploads dir /root/wiki&
 
+gollum ${GOLLUM_OPTS} /root/wiki&
