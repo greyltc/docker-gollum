@@ -6,10 +6,11 @@ MAINTAINER Grey Christoforo <grey@christoforo.net>
 ADD setup-gollum.sh /usr/sbin/setup-gollum
 RUN setup-gollum
 
-ADD run-gollum.sh /usr/bin/run-gollum
+ADD start-gollum.sh /usr/bin/start-gollum
 
 VOLUME /root/wiki
 
 EXPOSE 80
+EXPOSE 443
 
-CMD run-gollum && sleep infinity
+CMD start-gollum && sleep infinity
