@@ -7,6 +7,7 @@ chmod +x /etc/profile.d/ruby.sh
 source /etc/profile.d/ruby.sh
 
 #gem install gollum --no-user-install
+gem install github-markdown
 gem install gollum
 
 #mkdir /root/wiki
