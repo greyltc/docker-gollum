@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e -u -o pipefail
 
 # install base-devel without systemd
 pkgs=$(pacman -S base-devel --print-format '%n ');pkgs=${pkgs//systemd/};pkgs=${pkgs//$'\n'/}
