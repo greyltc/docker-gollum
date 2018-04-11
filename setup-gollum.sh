@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-pacman -S --needed --noconfirm base-devel ruby git
+# install base-devel without systemd
+pkgs=$(pacman -S base-devel --print-format '%n ');pkgs=${pkgs//systemd/};pkgs=${pkgs//$'\n'/}
+pacman -S --needed --noprogressbar --noconfirm $pkgs ruby git
+
 echo "PATH=$(ruby -e 'print Gem.user_dir')/bin:"'$PATH' > /etc/profile.d/ruby.sh
 echo "export PATH" >> /etc/profile.d/ruby.sh
 chmod +x /etc/profile.d/ruby.sh
