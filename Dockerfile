@@ -2,6 +2,9 @@
 FROM greyltc/archlinux
 MAINTAINER Grey Christoforo <grey@christoforo.net>
 
+# uncomment this to update the container's mirrorlist
+#RUN get-new-mirrors
+
 # install gollum
 ADD setup-gollum.sh /usr/sbin/setup-gollum
 RUN setup-gollum
